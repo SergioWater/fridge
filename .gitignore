@@ -1,0 +1,56 @@
+# Dependencies and generated application output
+node_modules/
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+*.tsbuildinfo
+app-example/
+fridge-app/android/
+fridge-app/ios/
+.gradle/
+.kotlin/
+
+# Local environment and signing credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p8
+*.p12
+*.jks
+*.keystore
+*.mobileprovision
+
+# Supabase local connection caches
+supabase/.temp/
+supabase/.branches/
+
+# Private assistant configuration and local project notes
+/.local-git-history/
+.claude/
+CLAUDE.md
+/technical engineer/
+/claude-code-setup.txt
+/fridgeessences-testflight-submission.md
+/labels.txt
+/Option-Whatitis-Effort.csv
+fridge-app/tsats
+
+# Historical screenshots contain household information; duplicate root assets
+/IMG_0570.png
+/IMG_0571.png
+/IMG_0573.png
+/deepfridge logo.png
+/shared_fridge_architecture.pdf
+/shared_fridge_architecture (1).pdf
+
+# OS and development logs
+.DS_Store
+Thumbs.db
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log

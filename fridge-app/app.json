@@ -1,0 +1,84 @@
+{
+  "expo": {
+    "name": "fridgeEssences",
+    "slug": "Deep",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/deepfridge logo.png",
+    "scheme": "fridgeapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lushessences.deepfridge",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/deepfridge logo.png",
+        "backgroundImage": "./assets/images/deepfridge logo.png",
+        "monochromeImage": "./assets/images/deepfridge logo.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.anonymous.Deep"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/deepfridge logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/deepfridge logo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera to scan product barcodes."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/deepfridge logo.png",
+          "color": "#2563eb"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos to scan receipts.",
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera to scan receipts."
+        }
+      ],
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "a7d03831-bfe3-4f0a-9293-bdeec4478d56"
+      }
+    }
+  }
+}

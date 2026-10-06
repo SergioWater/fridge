@@ -1,0 +1,66 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+app-example
+
+# generated native folders
+/ios
+/android
+
+.env
+
+# Supabase CLI local cache
+supabase/.temp/
+supabase/.branches/
+
+# Keep all local environments and signing material out of uploads
+.env.*
+!.env.example
+!.env.sample
+*.keystore
+
+# Local assistant notes contain account/household details
+.claude/
+CLAUDE.md
+
+# Accidental saved Git log
+/tsats
+
+# Local generated caches and OS files
+.gradle/
+Thumbs.db
